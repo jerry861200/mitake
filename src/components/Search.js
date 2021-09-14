@@ -1,9 +1,8 @@
-function Search({ setFilteredList}) {
-  const nameSearch = ''
+function Search({ filter, nameSearch, setNameSearch}) {
   return (
     <section className='search-container'>
-      <input type="text" placeholder='搜尋' value={nameSearch} readOnly className='search-input'/>
-      <button type='button' className='search-btn' onClick={() => setFilteredList(nameSearch)}>搜尋</button>
+      <input type="text" placeholder='姓名搜尋' className='search-input' onChange={(e) => setNameSearch(e.target.value)}/>
+      <button type='button' className='search-btn' onClick={filter}>搜尋</button>
     </section>
   )
 }

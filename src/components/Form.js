@@ -5,7 +5,6 @@ function Form({ setList }) {
   const [form, setForm] = useState({ name: '', phone: '', email: '', birthday: new Date() })
   const [error, setError] = useState(false);
   const checkForm = () =>{
-    console.log('check form');
     if (form.name.length === 0 || form.phone.length === 0 || form.email.length === 0) return false;
     if(isNaN(parseFloat(form.phone))) return false;
     return true;
@@ -24,7 +23,6 @@ function Form({ setList }) {
     
   };
   const handleChange = (e) => {
-    console.log('handleChange');
     setForm((prev) => {
       return { ...prev, [e.target.name]: e.target.value }
     })

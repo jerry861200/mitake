@@ -1,20 +1,16 @@
-import { useState } from 'react';
-import Search from './Search';
 import '../asset/styles/AddressBook.css'
 import { FaPhoneAlt, FaBirthdayCake } from 'react-icons/fa'
 import { FiMail } from 'react-icons/fi'
 
-function AddressBook({ list }) {
-  const [filteredList, setFilteredList] = useState([])
-
+function AddressBook({ filteredList }) {
+  
   return (
     <>
-      <Search setFilteredList={setFilteredList} />
       <section className='address-book'>
-        {list.map((item) => {
+        {filteredList.map((item,index) => {
           const { name, phone, email } = item;
           return (
-            <article className='address-book__item' key={phone}>
+            <article className='address-book__item' key={index}>
               <div className='address-book__top'>
                 <h3 className='address-book__name'>{name}</h3>
                 <div className='flex-wrapper'>
@@ -32,10 +28,6 @@ function AddressBook({ list }) {
                   <FaBirthdayCake className='address-book__icon' />
                   <h5>1009/01/20</h5>
                 </div>
-
-
-
-
               </div>
             </article>
           )

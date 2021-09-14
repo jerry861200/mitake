@@ -5,7 +5,7 @@ function Input({ index, value, handleChange }) {
     name: '姓名',
     phone: '電話',
   }
-  console.log(index, value);
+
   return (
     <div className="form-control">
       <label htmlFor={index} className='label'>
