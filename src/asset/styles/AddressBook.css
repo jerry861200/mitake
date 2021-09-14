@@ -1,0 +1,72 @@
+.search-container{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: end;
+}
+.search-btn{
+  background-color: var(--primary);
+  color: whitesmoke;
+  border: none;
+  border-radius: 1.2rem;
+  padding: 0.3rem 1.2rem;
+  display: inline-block;
+  margin-left: 1rem;
+}
+.search-input{
+  border: 1px solid var(--gray);
+  padding: 0.5rem 1rem;
+  flex-grow: 1;
+  height: 2.6rem;
+  border-radius: 1.2rem;
+}
+.address-book{
+background-color: #fff;
+border-radius: 1rem;
+margin-top: 1.5rem;
+}
+.address-book__item{
+  
+  border-bottom: 1px solid ;
+  border-bottom-color: var(--gray);
+  padding: 1rem 0.75rem;
+}
+.address-book__top{
+  display: flex;
+  justify-content: space-between;
+}
+.address-book__name{
+
+}
+
+.address-book__phone{
+  align-self: flex-end;
+}
+.address-book__phone-icon{
+  display: inline-block;
+  vertical-align: bottom;
+  margin-top: 0.14rem;
+  margin-right: 0.16rem;
+  font-size: 14px;
+}
+.address-book__bottom{
+  margin-top: 1rem;
+  color: var(--gray);
+  display: flex;
+  justify-content: space-between;
+}
+.address-book__bottom .address-book__icon{
+  margin-right: 0.3rem;
+  color: var(--gray);
+}
+/* .table{
+  margin-top: 1rem;
+  padding: 1rem;
+  width: 400px;
+  overflow-x: scroll;
+  
+}
+.table tr{
+display: grid;
+  grid-template-columns: 150px 150px 150px 150px;
+  
+} */

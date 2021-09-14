@@ -1,0 +1,43 @@
+:root{
+  --dark-gray:#757575;
+  --gray:#bfbfbf;
+  --light-gray:#f8f8f8;
+  --primary: #2CA9C9;
+}
+body{
+background-color: var(--light-gray);
+  font-size: 16px;
+  color: #333333
+}
+.app{
+  width: 375px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+*{
+  outline:none;
+  box-sizing: border-box;
+  letter-spacing: 1.5px;
+  ;
+}
+h2{
+  font-size: 1.4rem;
+}
+h3{
+  font-size: 1.2rem;
+}
+h5{
+  font-size: 0.875rem;
+}
+.flex-wrapper{
+  display: flex;
+}
+
+
+
+@media(min-width:426px){
+  .app{
+    width: 1024px;
+    margin: 0 auto;
+  }
+}
