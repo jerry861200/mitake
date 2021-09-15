@@ -21,7 +21,7 @@
 }
 .address-book{
 background-color: #fff;
-border-radius: 1rem;
+/* border-radius: 1rem; */
 margin-top: 1.5rem;
 }
 .address-book__item{
@@ -34,39 +34,35 @@ margin-top: 1.5rem;
   display: flex;
   justify-content: space-between;
 }
-.address-book__name{
+.drop-list{
+  margin-top: 1rem;
+}
+.drop-list .flex-wrapper{
+  margin-top: 0.5rem;
 
 }
-
 .address-book__phone{
-  align-self: flex-end;
+  color: #333;
+  margin-left: 0.3rem;
+  margin-right: 0.6rem;
 }
-.address-book__phone-icon{
-  display: inline-block;
-  vertical-align: bottom;
-  margin-top: 0.14rem;
-  margin-right: 0.16rem;
-  font-size: 14px;
-}
-.address-book__bottom{
-  margin-top: 1rem;
-  color: var(--gray);
-  display: flex;
-  justify-content: space-between;
-}
-.address-book__bottom .address-book__icon{
-  margin-right: 0.3rem;
+
+.address-book__icon{
+  margin-left: 0.3rem;
+  margin-right: 0.6rem;
   color: var(--gray);
 }
-/* .table{
-  margin-top: 1rem;
-  padding: 1rem;
-  width: 400px;
-  overflow-x: scroll;
-  
+.address-book__email{
+  color: var(--gray);
 }
-.table tr{
-display: grid;
-  grid-template-columns: 150px 150px 150px 150px;
-  
-} */
+.address-book__birth{
+  color: var(--gray);
+}
+.address-book__edit{
+  margin-left: 0.3rem;
+  margin-right: 0.6rem;
+  color: var(--primary);
+}
+.address-book__delete{
+  color: var(--warn);
+}
