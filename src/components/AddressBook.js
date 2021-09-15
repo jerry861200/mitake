@@ -1,9 +1,15 @@
 import '../asset/styles/AddressBook.css'
-import { FaPhoneAlt, FaBirthdayCake } from 'react-icons/fa'
-import { FiMail, FiEdit, FiTrash2 } from 'react-icons/fi'
+import { FaBirthdayCake } from 'react-icons/fa'
+import { FiMail, FiEdit, FiTrash2, FiChevronDown } from 'react-icons/fi'
+import { BiPhone } from 'react-icons/bi'
 
 function AddressBook({ filteredList, showDropList, deleteItem, editItem }) {
 
+  const handleEdit = (name) => {
+    window.document.body.scrollTop = 0;
+    window.document.documentElement.scrollTop = 0;
+    editItem(name)
+  }
   return (
     <>
       <section className='address-book'>
@@ -13,11 +19,12 @@ function AddressBook({ filteredList, showDropList, deleteItem, editItem }) {
             <article className='address-book__item' key={index}>
               <div className='address-book__top' onClick={() => showDropList(index)}>
                 <h3 className='address-book__name'>{name}</h3>
+                <FiChevronDown />
               </div>
               {show &&
                 <div className='drop-list'>
                   <div className='flex-wrapper '>
-                    <FaPhoneAlt className='address-book__phone' />
+                    <BiPhone className='address-book__phone' />
                     <h4 >{phone}</h4>
                   </div>
                   <div className="flex-wrapper">
@@ -27,10 +34,9 @@ function AddressBook({ filteredList, showDropList, deleteItem, editItem }) {
                   <div className="flex-wrapper">
                     <FaBirthdayCake className='address-book__icon' />
                     <h4 className='address-book__birth'>{birthday}</h4>
-
                   </div>
-                  <div className="flex-wrapper">
-                    <FiEdit className='address-book__edit' onClick={() => editItem(name)} />
+                  <div className="delete-container">
+                    <FiEdit className='address-book__edit' onClick={() => handleEdit(name)} />
                     <FiTrash2 className='address-book__delete' onClick={() => deleteItem(name)} />
                   </div>
                 </div>

@@ -57,8 +57,11 @@ function App() {
   return (
     <main className='app'>
       <Form setList={setList} editId={editId} list={list} setEditId={setEditId} />
-      <Search filter={filter} nameSearch={nameSearch} setNameSearch={setNameSearch} />
-      <AddressBook filteredList={filteredList} showDropList={showDropList} deleteItem={deleteItem} editItem={editItem}/>
+      <div className='right-side'>
+        <Search filter={filter} nameSearch={nameSearch} setNameSearch={setNameSearch} />
+        <AddressBook filteredList={filteredList} showDropList={showDropList} deleteItem={deleteItem} editItem={editItem} />
+      </div>
+      
     </main>
   );
 }

@@ -21,11 +21,10 @@
 }
 .address-book{
 background-color: #fff;
-/* border-radius: 1rem; */
+border-radius: 1rem;
 margin-top: 1.5rem;
 }
 .address-book__item{
-  
   border-bottom: 1px solid ;
   border-bottom-color: var(--gray);
   padding: 1rem 0.75rem;
@@ -39,29 +38,22 @@ margin-top: 1.5rem;
 }
 .drop-list .flex-wrapper{
   margin-top: 0.5rem;
-
+}
+.drop-list .delete-container{
+  margin-top: 1rem;
 }
 .address-book__phone{
   color: #333;
   margin-left: 0.3rem;
   margin-right: 0.6rem;
 }
-
 .address-book__icon{
   margin-left: 0.3rem;
   margin-right: 0.6rem;
-  color: var(--gray);
-}
-.address-book__email{
-  color: var(--gray);
-}
-.address-book__birth{
-  color: var(--gray);
 }
 .address-book__edit{
   margin-left: 0.3rem;
   margin-right: 0.6rem;
-  color: var(--primary);
 }
 .address-book__delete{
   color: var(--warn);

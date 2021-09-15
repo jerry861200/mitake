@@ -113,12 +113,13 @@ function Form({ setList, editId, list, setEditId }) {
       <Input index='email' value={form.email} handleChange={handleChange} />
       <BirthInput handleBirth={handleBirth} birth={birth} />
       <div className="submit-container">
-        <small className={`${error ? 'submit-error show' : 'submit-error'}`}>內容不可空白或格式有誤</small>
+        
         {
           (editId !== null) ? <button type='submit' className='submit-btn'>修改</button>
             : <button type='submit' className='submit-btn'>新增使用者</button>
         }
       </div>
+      <small className={`${error ? 'submit-error show' : 'submit-error'}`}>內容不可空白或格式有誤</small>
 
     </form>
   )

@@ -14,6 +14,8 @@ background-color: var(--light-gray);
   width: 375px;
   margin: 0 auto;
   padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
 }
 *{
   outline:none;
@@ -36,12 +38,14 @@ h5{
 .flex-wrapper{
   display: flex;
 }
-
-
-
 @media(min-width:426px){
   .app{
     width: 1024px;
     margin: 0 auto;
+    flex-direction: row;
+  }
+  .right-side{
+    flex-grow: 1;
+    padding: 1rem 0 0 5rem;
   }
 }
